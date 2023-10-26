@@ -1,0 +1,15 @@
+#gallery-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+
+img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
