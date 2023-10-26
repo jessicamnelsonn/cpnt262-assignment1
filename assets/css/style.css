@@ -1,7 +1,20 @@
+body{
+  padding: 0rem;
+  margin: 0rem;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Patua One', serif;
+  font-size: 90px;
+}
+
 #gallery-container {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 2rem;
+padding: 1rem;
 }
 
 img{
@@ -10,6 +23,15 @@ img{
   aspect-ratio: 1/1;
   object-fit: cover;
 
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-radius: 1rem;
+}
+
+header{
+  height: 100vh;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/header-image.jpg"); 
+  overflow: hidden;
 }
