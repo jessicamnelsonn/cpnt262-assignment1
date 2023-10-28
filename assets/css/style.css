@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* Reset default body styles */
 body{
   padding: 0rem;
   margin: 0rem;
@@ -53,9 +53,15 @@ h1{
   font-size: 100px;
 }
 
+/* Style h2 text */
 h2{
   text-align: center;
   font-size: 30px;
+}
+
+p{
+  font-size: 20px;
+  padding: 1rem;
 }
 
 #gallery-container {
@@ -74,7 +80,30 @@ img{
   border-radius: 1rem;
 }
 
-footer{
+/* Style footer */
+.copy{
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.collapsible {
+  background-color: #edc795;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.active, .collapsible:hover {
+  background-color: #20120d;
+  color: white;
+}
+
