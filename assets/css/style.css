@@ -127,10 +127,10 @@ body {
 
 .collapsible {
   background-color: #edc795;
-  color: black;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
   border: none;
   text-align: left;
   outline: none;
