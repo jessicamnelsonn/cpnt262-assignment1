@@ -1,0 +1,16 @@
+/* Reset default body styles */
+body{
+  padding: 0rem;
+  margin: 0rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Reset default list styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+}
