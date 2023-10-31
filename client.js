@@ -21,7 +21,6 @@ const gallery = [
   { imageFile: "optimized-image8.jpg" },
   { imageFile: "optimized-image9.jpg" },
 ]
-
 // Get the container element
 const container = document.getElementById("gallery-container");
 // Loop through the data array and render images
