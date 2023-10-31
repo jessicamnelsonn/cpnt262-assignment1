@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Linked JavaScript -->
-  <script src="client.js" type="module" defer></script>
+  <script src="client.js" defer></script>
   <!-- Linked CSS -->
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -16,26 +16,37 @@
   <title>Bring a Webpage to Life</title>
 </head>
 <body> 
+  
 <!-- Navigation Bar -->
 <nav>
+  <!-- Toggle to Change Color -->
+  <div>
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="checkbox-label">
+      <span class="ball"></span>
+    </label>
+  </div>
   <ul>
     <li><a href="#Home">Home</a></li>
     <li><a href="#Attractions">Attractions</a></li>
-    <li><a href="#Things to Do">Things to Do</a></li>
-    <li><a href="#Barcelona Map">Barcelona Map</a></li>
+    <li><a href="#Things-to-Do">Things to Do</a></li>
+    <li><a href="#Barcelona-Map">Barcelona Map</a></li>
   </ul>
-</nav>  
+</nav> 
+
 <!-- Header -->
 <header>
+  <!-- Page Main Heading -->
   <h1>Barcelona</h1>
   <!-- Simple CTA Button -->
   <article class="cta">
-    <p>Plan your trip</p>
+    <h2>Plan Your Trip</h2>
   </article> 
 </header>
 
+<!-- Main Page Section -->
 <main>
-
+  <!-- Page Subheading -->
   <h2>The Beauty of Barcelona</h2>
   <!-- HTML for Collapsible -->
   <button type="button" class="collapsible">Read More</button>
@@ -46,11 +57,34 @@
   <!-- Container for Gallery -->
   <div id="gallery-container"></div>
 <!-- HTML for Text Input -->
-<input type="text" id="myText" value="Some text...">
-<button onclick="myFunction()">Enter</button>
-<p id="text-input"></p>
+<h2>Enter for a Chance to Win a Free Trip to Barcelona</h2>
+<label class="radio-button">Are you over the age of 18?:</label>
+        <!-- HTML for Radio Button "Yes" -->
+        <input type="radio" id="radio1" name="radio" value="option1">
+        <label for="radio1">Yes</label>
+        <!-- HTML for Radio Button "No" -->
+        <input type="radio" id="radio2" name="radio" value="option2">
+        <label for="radio2">No</label>
+<!-- HTML for Form Input -->
+<form>
+      <!-- HTML for First Name Input -->  
+      <label class="contact" for="fname">First Name:</label>
+      <input class="input-form" id="fname" type="text" onblur="requiredField(this)" placeholder="First Name" required>
+      <span id="fname-error" class="error-message"></span>
+      <!-- HTML for Last Name Input -->  
+      <label class="contact" for="lname">Last Name:</label>
+      <input class="input-form" id="lname" type="text" onblur="requiredField(this)" placeholder="Last Name" required>
+      <span id="lname-error" class="error-message"></span>
+      <!-- HTML for Email Input -->  
+      <label class="contact" for="email">Email:</label>
+      <input class="input-form" id="email" type="email" onblur="requiredField(this)" placeholder="Email" required>
+      <span id="email-error" class="error-message"></span>
+      <!-- HTML for Submit Input -->  
+      <button type="submit">submit</button>
+</form>      
 </main>
 
+<!-- Page Footer -->
 <footer>
   <!-- Copyright Information -->
   <p class="copy">&copy;2023 Jessica Nelson</p>
